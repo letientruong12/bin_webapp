@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tra cứu BIN</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Select2 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">BINLIST VER PRO</h1>
+        <form method="POST" action="/" class="p-4 border rounded bg-light">
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <label for="bin_number" class="form-label">BIN Number (6 SỐ)</label>
+                    <input type="text" class="form-control" id="bin_number" name="bin_number" placeholder="Nhập BIN Number">
+                </div>
+                <div class="col-md-6">
+                    <label for="country" class="form-label">Country</label>
+                    <select class="form-select select2" id="country" name="country">
+                        <option value="">Chọn quốc gia</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <label for="bank_name" class="form-label">Bank Name</label>
+                    <select class="form-select select2" id="bank_name" name="bank_name">
+                        <option value="">Chọn ngân hàng</option>
+                    </select>
+                </div>
+                <div class="col-md-6">
+                    <label for="card_name" class="form-label">Card Name (VISA, CREDIT, DEBIT, JBC, MASTERCARD,...)</label>
+                    <select class="form-select select2" id="card_name" name="card_name">
+                        <option value="">Chọn tên thẻ</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <label for="card_type" class="form-label">Card Type (CREDIT, DEBIT, WORLD, PREPAID, STANDARD, BUSINESS, GOLD, PLATINUM, PREFERRED BUSINESS...)</label>
+                    <select class="form-select select2" id="card_type" name="card_type">
+                        <option value="">Chọn loại thẻ</option>
+                    </select>
+                </div>
+                <div class="col-md-6">
+                    <label for="provider_type" class="form-label">Provider Type (CORPORATE, BLACK, WORLD ELITE, PLATINUM, PREPAID BUSINESS, ENHANCED, B2B,...  )</label>
+                    <select class="form-select select2" id="provider_type" name="provider_type">
+                        <option value="">Chọn loại nhà cung cấp</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <label for="time_update" class="form-label">Time Update</label>
+                    <input type="text" class="form-control" id="time_update" name="time_update" placeholder="YYYY-MM-DD">
+                </div>
+                <div class="col-md-6">
+                    <label for="note" class="form-label">Note</label>
+                    <input type="text" class="form-control" id="note" name="note" placeholder="Nhập ghi chú">
+                </div>
+            </div>
+            <div class="text-center">
+                <button type="submit" class="btn btn-primary">Tìm kiếm</button>
+            </div>
+        </form>
+    </div>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Select2 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <!-- Custom JS -->
+    <script src="/static/js/script.js"></script>
+</body>
+</html>
